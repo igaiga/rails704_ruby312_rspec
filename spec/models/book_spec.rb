@@ -39,4 +39,13 @@ RSpec.describe Book, type: :model do
       end
     end
   end
+
+  # TimeHelpers サンプルコード
+  # it do
+  #   travel_to(Time.current) do
+  #     p Time.current #=> Mon, 11 Sep 2017 12:00:00 JST +09:00
+  #     sleep 3
+  #     p Time.current #=> Mon, 11 Sep 2017 12:00:00 JST +09:00
+  #   end
+  # end
 end
