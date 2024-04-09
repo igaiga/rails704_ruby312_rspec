@@ -5,7 +5,7 @@ FactoryBot.define do
 
     trait :with_variations do
       after(:create) do |book|
-        book.variations.create!(kind: "paper book")
+        create_list(:variation, 2, book: book)
       end
     end
   end
